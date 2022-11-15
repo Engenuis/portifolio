@@ -1,0 +1,147 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #252525;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 25px;
+    height: 40px;
+    border-radius: 15px;
+    background: #33505B;
+}
+
+header > div.header-text{
+    display: flex;
+    position: sticky;
+    align-items: center;
+    margin: 3px 15px;
+}
+
+header > div.header-text > img{
+    width: 35px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px black;
+    margin-right: 18px;
+}
+
+header > div.header-text > p{
+    font-family: 'Monofett', cursive;
+    font-size: 35px;
+}
+
+header > div.header-links{
+    margin-right: 20px;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    gap: 10px;
+}
+
+header > div.header-links > a{
+    color: #F4E8C1;
+    margin-right: 15px;
+}
+
+main > section.about{
+    background: #A0C1B9;
+    padding: 5px 15px 30px;
+    text-align: center;
+}
+
+main > section.about > h1{
+    font-family: 'Monofett', cursive;
+    font-size: 35px;
+}
+
+main > section.about > picture > img{
+    border-radius: 15px;
+    width: 200px;
+    margin: 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);
+}
+
+main > section.about > p{
+    font-family: 'Azeret Mono', monospace;
+    color: #F4E8C1;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    padding: 15px;
+}
+
+main > section.projects{
+    background-color: #33505B;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(1fr, 2);
+    grid-template-rows: repeat(1fr, 6);
+    gap: 25px 25px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+main > section.projects > h1{
+    grid-column: 1 / span 2;
+    text-align: center;
+    font-family: 'Monofett', cursive;
+    font-size: 35px;
+}
+
+main > section.projects > div.legend > span{
+    font-family: 'Roboto', sans-serif;
+}
+
+main > section.projects > div.project > a > img{
+    width: 200px;
+    border-radius: 5px;
+}
+
+main > section.projects > div.project > img{
+    border-radius: 5px;
+}
+
+main > section.projects > div.project > p{
+    text-align: center;
+    font-family: 'Azeret Mono', cursive;
+    font-weight: 400;
+    font-size: 12px;
+    color: white;
+    text-decoration: underline;
+    margin-top: 6px;
+}
+
+main > section.projects > div.project{
+    transition: transform 0.3s;
+}
+
+main > section.projects > div.project:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+footer{
+    background-color: #706993;
+    width: 150px;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    padding: 5px;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer > img{
+    cursor: pointer;
+}
