@@ -128,7 +128,6 @@ main > section.projects > div.project{
     align-items: center;
     justify-content: center;
     transition: transform 0.3s;
-    border: 2px solid red;
 }
 
 main > section.projects > div.project:hover{
